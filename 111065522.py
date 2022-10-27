@@ -8,7 +8,7 @@ from pprint import pprint
 
 def words(text): # 類似split，依照空格切出一個一個字
     return re.findall(r'\w+', text.lower())
-word_count = Counter(words(open('data/big 2.txt').read()))
+word_count = Counter(words(open('big 2.txt').read()))
 # word_count['the']: 這篇文章總共有幾個the
 # word_count.values(): 取出counts of each word as list
 N = sum(word_count.values()) # N = 這篇文章總共有幾個字
